@@ -11,7 +11,7 @@ public:
 
     // Метод для вывода квадратов чисел от 0 до 9
     void Cycle() {
-        for (int i = 0; i < 10; i++) { // исправлено условие на i < 10
+        for (int i = 0; i < 10; i++) {
             int k = i * i;
             cout << k << " "; // выводим все квадраты
         }
@@ -19,7 +19,7 @@ public:
     }
 
     // Метод для ввода данных в массив и его вывода
-    void EnteringDataIntoArray() { // изменен тип на void
+    void EnteringDataIntoArray() {
         for (int i = 0; i < 10; i++) {
             ccc[i] = i;
             cout << "|" << ccc[i]; // выводим исходный массив
@@ -60,7 +60,7 @@ int main() {
 
     Program p;
     p.Cycle();
-    p.EnteringDataIntoArray(); // вызываем метод для инициализации массива
+    p.EnteringDataIntoArray();
     p.ArrayReverse();
     p.RandomGenerator();
 
